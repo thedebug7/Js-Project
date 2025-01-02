@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guess Game.</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+          background-color: rgb(82, 154, 160);
+        }
+        input[type="number"] {
+          padding: 10px;
+          width: 200px;
+        
+        }
+        button {
+          padding: 10px 15px;
+          margin: 10px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        button:hover {
+          background-color: #0056b3;
+        }
+        .message {
+          margin-top: 20px;
+          font-size: 18px;
+          color: #333;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Number Guessing Game!</h1>
+    <p>Guess the number I'm thinking of (1-10)!</p>
+
+    <!-- Form for user input -->
+    <form id="guessForm" onsubmit="return false">
+      <input
+        type="number"
+        id="userGuess"
+        placeholder="Enter your guess Number"
+        min="1"
+        max="10"
+        required
+      />
+      <br />
+      <button type="button" id="guessButton">Guess</button>
+      <button type="button" id="restartButton">Restart</button>
+    </form>
+
+    <div class="message" id="message"</div>
+
+    <!-- Javascript connect -->
+    <script src="script.js"></script>
+  </body>
+</html>
